@@ -34,7 +34,11 @@ video1 = document.getElementById('video1');
 canvas = document.getElementById('canvas');
 photo = document.getElementById('photo');
 myVideo.muted =true;
-var peer = new Peer();
+var peer = new Peer(undefined,{
+  path: '/peerjs',
+  host: '/',
+  port: '443'
+});
 // id is basically a id that a new user after connection gets
 peer.on ('open',id =>{                    
    socket.emit('join-room' ,ROOM_ID,id);
