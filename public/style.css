@@ -62,6 +62,7 @@ video {
 .main_controls_button i{
     font-size :24px;
 }
+
 .main_controls_button:hover {
     background-color: #343434;
     border-radius:5px ;
