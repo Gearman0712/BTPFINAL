@@ -34,6 +34,7 @@ video1 = document.getElementById('video1');
 canvas = document.getElementById('canvas');
 photo = document.getElementById('photo');
 myVideo.muted =true;
+//var peer = new Peer();
 var peer = new Peer(undefined,{
   path: '/peerjs',
   host: '/',
